@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turing Machine Sim</title>
+    <script src="tape.js"></script>
+    <link rel="stylesheet" href="tape.css">
+</head>
+<body>
+    <header>
+        <h1 style = "text-align: center;">Turing Machine Simulator </h1>
+    </header>
+    <main>
+
+        <div id="head1" class="head"></div>
+        
+        <div id = "tmBar">
+            <h4 id="head1mem">Head Memory: _</h4>
+            <h4 id="status">Status: Not Running</h4>
+            <h4 id ="autoscrollButton"></h4>
+        </div>
+        <div id="cellHolder"></div>
+        
+        
+        </div>
+
+        <textarea id="codeBox"></textarea>
+        <button id="runButton" onclick = "runTM()">Run</button>
+
+    </main>
+    <footer>
+        <p>© 2023 David Premkumar | Turing Machine Sim</p>
+    </footer>
+</body>
+</html>

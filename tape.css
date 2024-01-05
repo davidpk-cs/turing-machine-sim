@@ -1,0 +1,74 @@
+body {
+  overflow-x: scroll;
+}
+
+#cellHolder{
+
+    display: flex;
+    overflow-x: auto;
+    border-style:dashed;
+    padding-top: 50px;
+
+
+}
+
+#tmBar{
+  display: flex;
+  justify-content: space-between;
+}
+
+.tapeCell{
+
+    height: 50px;
+    width: 50px;
+    border-color:darkgreen;
+    border-style: solid;
+    margin: 10px;
+
+    white-space: nowrap;    /* to prevent wrapping */
+    flex: 0 0 auto;         /* avoid resizing */
+
+    display: flex;     
+    justify-content: center; 
+    align-items: center;     
+}
+
+.head{
+  position: absolute;
+  top: 100px; 
+  left: 200px; 
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: darkblue; 
+  transition: top 0.5s, left 0.5s;
+}
+
+#codeBox {
+    width: 50%;
+    height: 400px; 
+    font-family: 'Courier New', monospace; 
+    background-color: #f4f4f4; /* Light grey*/
+    border: 1px solid #ccc; 
+    padding: 10px; 
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.1); 
+    line-height: 1.5; 
+    tab-size: 4; /* how much it "tabs" */
+    white-space: pre; /* to preserve white space to make parsing it easier*/
+    margin: 20px;
+    resize: none;
+  }
+
+  #runButton {
+
+    width: 100px;
+    height: 50px;
+    background-color: green;
+    color: white;
+    border-color: darkgreen;
+    border-style: solid;
+    border-radius: 20px;
+  }
+  #runButton:hover{
+    background-color: darkgreen;
+  }
