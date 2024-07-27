@@ -1,0 +1,5 @@
+load ababaababa
+if a move right else reject
+if b move right else reject
+if blank accept
+if a goto 2 else reject
